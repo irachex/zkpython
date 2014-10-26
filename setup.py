@@ -19,7 +19,7 @@ from distutils.core import setup, Extension
 
 zookeepermodule = Extension("zookeeper",
                             sources=["zookeeper.c"],
-                            include_dirs=["/usr/include/c-client-src", "/usr/local/include/c-client-src"],
+                            include_dirs=["/usr/include/c-client-src", "/usr/local/include/c-client-src", "/usr/local/include/zookeeper"],
                             libraries=["zookeeper_mt"],
                             )
 
